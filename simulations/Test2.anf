@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/MerryGoRound/simulations/results/Test2-*.vec"/>
+    <inputs name="/MerryGoRound/simulations/results/Test2-*.sca"/>
+  </inputs>
+  <datasets>
+    <datasets name="all repetition">
+      <items xsi:type="scave:Add" filterPattern="*"/>
+      <items xsi:type="scave:Compute" operation="mean"/>
+      <items xsi:type="scave:Apply" operation="mean"/>
+    </datasets>
+    <datasets name="earnigPerTime:vector Playground.mgr.owner">
+      <items xsi:type="scave:Compute" operation="mean">
+        <groupBy>file</groupBy>
+      </items>
+      <items xsi:type="scave:LineChart" name="" lineNameFormat=""/>
+      <items xsi:type="scave:Add" filterPattern="run(Test2-1-20190102-17:55:47-1132) AND file(/MerryGoRound/simulations/results/Test2-#1.vec) AND attr:configname(Test2) AND attr:runnumber(1) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="run(Test2-0-20190102-17:55:46-1132) AND file(/MerryGoRound/simulations/results/Test2-#0.vec) AND attr:configname(Test2) AND attr:runnumber(0) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="run(Test2-2-20190102-17:55:46-23540) AND file(/MerryGoRound/simulations/results/Test2-#2.vec) AND attr:configname(Test2) AND attr:runnumber(2) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Group" name="earnigPerTime:vector Playground.mgr.owner">
+        <items xsi:type="scave:Apply" operation="mean"/>
+        <items xsi:type="scave:LineChart" name="earnigPerTime:vector Playground.mgr.owner" lineNameFormat="">
+          <properties name="Legend.Display" value="true"/>
+          <properties name="Legend.Border" value="true"/>
+          <properties name="Legend.Position" value="Right"/>
+          <properties name="Symbols.Type" value="None"/>
+          <properties name="Line.Type" value="Linear"/>
+        </items>
+      </items>
+    </datasets>
+    <datasets name="average">
+      <items xsi:type="scave:Add" filterPattern="run(*) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test2-#0.sca) AND attr:configname(Test2) AND attr:runnumber(0) AND module(Playground.mgr.owner) AND name(earnigPerTime:stats)" type="STATISTICS"/>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.1/@items.1"/>
+  </chartSheets>
+</scave:Analysis>

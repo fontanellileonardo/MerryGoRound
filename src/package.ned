@@ -1,0 +1,3 @@
+package merrygoround;
+
+@license(LGPL);

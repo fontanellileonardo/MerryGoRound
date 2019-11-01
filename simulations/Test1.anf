@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/MerryGoRound/simulations/results/Test1-*.vec"/>
+    <inputs name="/MerryGoRound/simulations/results/Test1-*.sca"/>
+  </inputs>
+  <datasets>
+    <datasets name="earnigPerTime:vector Playground.mgr.owner">
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#0.vec) AND attr:configname(Test1) AND attr:runnumber(0) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#1.vec) AND attr:configname(Test1) AND attr:runnumber(1) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#2.vec) AND attr:configname(Test1) AND attr:runnumber(2) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#3.vec) AND attr:configname(Test1) AND attr:runnumber(3) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#4.vec) AND attr:configname(Test1) AND attr:runnumber(4) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#5.vec) AND attr:configname(Test1) AND attr:runnumber(5) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#6.vec) AND attr:configname(Test1) AND attr:runnumber(6) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#7.vec) AND attr:configname(Test1) AND attr:runnumber(7) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#8.vec) AND attr:configname(Test1) AND attr:runnumber(8) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="file(/MerryGoRound/simulations/results/Test1-#9.vec) AND attr:configname(Test1) AND attr:runnumber(9) AND module(Playground.mgr.owner) AND name(earnigPerTime:vector)" type="VECTOR"/>
+    </datasets>
+  </datasets>
+  <chartSheets/>
+</scave:Analysis>
