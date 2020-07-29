@@ -10,3 +10,9 @@ More in detail, at least the following scenarios must be evaluated:
 * Burst arrivals: interarrival times are still exponential, but the number of children in one arrival is geometrically distributed.
 
 In all cases, it is up to the team to calibrate the scenarios so that meaningful results are obtained.
+
+## Results
+The results of the project are available in the [documentation](https://github.com/fontanellileonardo/MerryGoRound/blob/master/MerryGoRound_Documentation.pdf) and also they have been summarized in the [presentation](https://github.com/fontanellileonardo/MerryGoRound/blob/master/MerryGoRound_Presentation.pdf) that have been performed to the teachers of the course.
+
+## Credits
+B. Tekalgne, L. Fontanelli
